@@ -1,0 +1,25 @@
+id: ssh-version-banner
+
+info:
+  name: SSH Raw Banner Grab
+  author: axo
+  severity: info
+  description: |
+    Performs raw banner grabbing on SSH port 22 via network TCP probe.
+  reference:
+    - https://nmap.org/nsedoc/scripts/banner.html
+  tags: ssh,network,enum,banner
+
+network:
+  - host:
+      - "{{Hostname}}"
+      - "{{Host}}:22"
+
+    inputs:
+      - data: "\n"
+
+    matchers:
+      - type: regex
+        name: ssh-version
+        regex:
+          - "SSH-2.0-.*"

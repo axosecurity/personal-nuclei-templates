@@ -1,0 +1,37 @@
+{
+  "name": "@axosecurity/personal-nuclei-templates",
+  "version": "1.0.0",
+  "description": "Custom Nuclei templates collection with instant NPX sync utility for local nuclei directories",
+  "main": "bin/sync.js",
+  "bin": {
+    "axo-nuclei-sync": "./bin/sync.js",
+    "personal-nuclei-templates": "./bin/sync.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axosecurity/personal-nuclei-templates.git"
+  },
+  "keywords": [
+    "nuclei",
+    "nuclei-templates",
+    "security",
+    "bugbounty",
+    "pentest",
+    "automation",
+    "ssh",
+    "sync"
+  ],
+  "author": "Axo solaman <https://github.com/axosecurity>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axosecurity/personal-nuclei-templates/issues"
+  },
+  "homepage": "https://github.com/axosecurity/personal-nuclei-templates#readme",
+  "files": [
+    "bin",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
